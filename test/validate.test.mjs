@@ -1,4 +1,6 @@
 import { test } from 'node:test';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { validate } from '../lib/validate.mjs';
 import { writeIndex } from '../lib/index.mjs';
@@ -68,4 +70,29 @@ test('flags bad licence', async () => {
   writeIndex(dir, R2);
   const errors = await validate(dir, opts);
   assert.ok(errors.some((e) => /invalid license/.test(e)), errors.join('\n'));
+});
+
+test('flags legacy getquix.net images, including escaped slashes', async () => {
+  const dir = built();
+  const item = readJson(dir, 'blocks/b.json');
+  item.data[0].children[0].children[0].image = 'https://getquix.net/images/x.jpg';
+  writeJson(dir, 'blocks/b.json', item);
+  let errors = await validate(dir, opts);
+  assert.ok(errors.some((e) => /legacy host.*b\.json/.test(e)), errors.join('\n'));
+
+  const dir2 = built();
+  const p = join(dir2, 'blocks/b.json');
+  writeFileSync(p, readFileSync(p, 'utf8').replace('"title"', '"u":"https:\\/\\/getquix.net\\/images\\/x.jpg","title"'));
+  errors = await validate(dir2, opts);
+  assert.ok(errors.some((e) => /legacy host.*b\.json/.test(e)), errors.join('\n'));
+});
+
+test('flags duplicate slug', async () => {
+  const dir = built();
+  const p = join(dir, 'meta/catalogue.json');
+  const raw = readFileSync(p, 'utf8');
+  const entry = JSON.stringify(readJson(dir, 'meta/catalogue.json').templates.b);
+  writeFileSync(p, raw.replace('"templates": {', `"templates": {\n "b": ${entry},`));
+  const errors = await validate(dir, opts);
+  assert.ok(errors.some((e) => /duplicate slug "b"/.test(e)), errors.join('\n'));
 });
