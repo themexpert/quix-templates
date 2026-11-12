@@ -96,3 +96,22 @@ test('flags duplicate slug', async () => {
   const errors = await validate(dir, opts);
   assert.ok(errors.some((e) => /duplicate slug "b"/.test(e)), errors.join('\n'));
 });
+
+test('remote check HEADs JSON-escaped R2 image urls', async () => {
+  const dir = built();
+  const p = join(dir, 'blocks/b.json');
+  writeFileSync(p, readFileSync(p, 'utf8').replace('"title"', '"u":"https:\\/\\/r2.test\\/images\\/x.jpg","title"'));
+  const realFetch = globalThis.fetch;
+  const seen = [];
+  globalThis.fetch = async (url) => {
+    seen.push(url);
+    return { ok: !url.endsWith('/images/x.jpg') };
+  };
+  try {
+    const errors = await validate(dir, { r2Base: R2, checkRemote: true });
+    assert.ok(seen.includes('https://r2.test/images/x.jpg'), seen.join('\n'));
+    assert.ok(errors.some((e) => /missing on R2: https:\/\/r2\.test\/images\/x\.jpg/.test(e)), errors.join('\n'));
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+});
