@@ -58,3 +58,14 @@ test('add refuses a payload without data', async () => {
   const o = await base(dir, { title: 'x' });
   await assert.rejects(addTemplate(dir, o, R2), /data/);
 });
+
+test('add gives a new layout category its own catid inside the bundle', async () => {
+  const dir = fixture();
+  const opts = { ...(await base(dir, payload())), type: 'layout', title: 'Delta', 'category-title': 'Brand New' };
+  const { slug, errors } = await addTemplate(dir, opts, R2);
+  assert.deepEqual(errors, []);
+  const entry = readJson(dir, 'meta/catalogue.json').templates[slug];
+  assert.ok(entry.catid && entry.catid !== '5', `catid ${entry.catid}`);
+  const item = readJson(dir, 'index.json').items.find((i) => i.id === slug);
+  assert.equal(item.parent_category, '5');
+});

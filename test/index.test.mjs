@@ -44,3 +44,12 @@ test('missing file for catalogue entry throws', () => {
 function writeCat(dir, cat) {
   writeFileSync(join(dir, 'meta/catalogue.json'), JSON.stringify(cat));
 }
+
+test('layouts carry the bundle parent_category, blocks the generic one', () => {
+  const dir = fixture();
+  const idx = buildIndex(dir, R2);
+  const a = idx.items.find((i) => i.id === 'a');
+  const b = idx.items.find((i) => i.id === 'b');
+  assert.equal(a.parent_category, '5');
+  assert.equal(b.parent_category, '1');
+});
