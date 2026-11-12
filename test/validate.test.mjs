@@ -62,6 +62,20 @@ test('flags stale index', async () => {
   assert.ok(errors.some((e) => /index\.json is out of date/.test(e)), errors.join('\n'));
 });
 
+test('flags index-hash.json that does not match index.json', async () => {
+  const dir = built();
+  // same content, different bytes: the content check passes, the hash does not
+  writeFileSync(join(dir, 'index.json'), `${readFileSync(join(dir, 'index.json'), 'utf8')}\n`);
+  let errors = await validate(dir, opts);
+  assert.ok(errors.includes('index-hash.json does not match index.json, run npm run build'), errors.join('\n'));
+  assert.ok(!errors.some((e) => /out of date/.test(e)), errors.join('\n'));
+
+  writeIndex(dir, R2);
+  writeJson(dir, 'index-hash.json', { success: true, data: 'stale' });
+  errors = await validate(dir, opts);
+  assert.ok(errors.includes('index-hash.json does not match index.json, run npm run build'), errors.join('\n'));
+});
+
 test('flags bad licence', async () => {
   const dir = fixture();
   const cat = readJson(dir, 'meta/catalogue.json');
