@@ -19,8 +19,6 @@ jobs:
       R2_PUBLIC_BASE: ${{ vars.R2_PUBLIC_BASE }}
       R2_ACCOUNT_ID: ${{ vars.R2_ACCOUNT_ID }}
       R2_BUCKET: ${{ vars.R2_BUCKET }}
-      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: auto
     steps:
       - uses: actions/checkout@v5
@@ -31,8 +29,12 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run validate
-      # images/ and thumbs/ committed in the repo
+      # images/ and thumbs/ committed in the repo. The R2 write keys are set
+      # only on the two upload steps, never for npm ci or the tests.
       - run: scripts/upload-media.sh
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       # mirror only what Quix fetches: the index and the template files
       - name: sync templates
         run: >
@@ -43,6 +45,8 @@ jobs:
           --include "layouts/*.json" --include "blocks/*.json"
           --delete --cache-control "public, max-age=300" --only-show-errors
         env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       - run: npm run validate -- --remote
