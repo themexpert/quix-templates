@@ -28,7 +28,7 @@ npm test
    npm run add -- --file export.json --type section --title "Hero Dark" --license free \
      --category-title Hero --tags "Startup,SaaS" --shot https://your-dev-site/page
    ```
-   Use `--thumb thumb.jpg` instead of `--shot` to supply your own image. `--shot` needs `npx playwright install chromium` once. Layouts are shot full page, blocks capture the first `.qx-section`. Optional: `--pack`, `--category-alias`, `--min-version` (default 4.0.0), `--slug`.
+   `--shot` takes the URL of the published dev-site page the template was built on (build each section on a page of its own). It captures only the page's own Quix content: header/footer/module collections and floating bars are left out, and lazy images and entrance animations are loaded first. Layouts become a 920x1000 crop from the top, sections/headers/footers a 700px wide image. Use `--thumb thumb.jpg` instead to supply your own image. `--shot` needs `npx playwright install chromium` once. Optional: `--pack`, `--category-alias`, `--min-version` (default 4.0.0), `--slug`.
    The command writes `blocks/<slug>.json` or `layouts/<slug>.json`, `thumbs/<slug>.jpg`, the catalogue entry, and regenerates the index, then validates. It refuses images that are not on R2.
 4. Open a PR. CI runs the tests and checks every image exists on R2 or in the PR. On merge the raw files are live immediately and the `sync to r2` workflow uploads the PR's images, thumbnails and template files to R2 within minutes.
 
