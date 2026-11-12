@@ -58,3 +58,32 @@ test('collects file names with spaces and parentheses', () => {
   assert.ok(json.includes('r2.test\\/images\\/buildx\\/drill (1).png'));
   assert.ok(json.includes('url(https://r2.test/images/y/z.png) no-repeat'));
 });
+
+test('handles doubled slashes after the host', () => {
+  const input =
+    '{"a":"https:\\/\\/getquix.net\\/\\/images\\/p\\/a.jpg","b":"https://getquix.net//images/q/b.png","c":"https://quix.b-cdn.net//images/c.webp"}';
+  const { json, paths } = rewriteImageUrls(input, R2);
+  assert.deepEqual(paths, ['images/p/a.jpg', 'images/q/b.png', 'images/c.webp']);
+  assert.ok(json.includes('"https:\\/\\/r2.test\\/images\\/p\\/a.jpg"'));
+  assert.ok(json.includes('"https://r2.test/images/q/b.png"'));
+  assert.ok(json.includes('"https://r2.test/images/c.webp"'));
+});
+
+test('rewrites base_domain, plain and escaped', () => {
+  const plain = '{"x":{"source":"images/a.svg","type":"svg","base_domain":"https://getquix.net/"}}';
+  const esc = '{"x":{"base_domain":"http:\\/\\/getquix.net\\/","source":"images\\/b.png"}}';
+  const other = '{"base_domain":"https://my.site/","source":"images/z.png"}';
+  assert.ok(rewriteImageUrls(plain, R2).json.includes('"base_domain":"https://r2.test/"'));
+  assert.ok(rewriteImageUrls(esc, R2).json.includes('"base_domain":"https:\\/\\/r2.test\\/"'));
+  assert.equal(rewriteImageUrls(other, R2).json, other);
+});
+
+test('collects relative image sources only for getquix base_domain', () => {
+  const input = JSON.stringify({
+    a: { source: 'images/layout-pack/c/tel.svg', type: 'svg', base_domain: 'https://getquix.net/' },
+    b: { base_domain: 'https://getquix.net/', source: 'qxio-ios-arrow-thin-right', type: 'icon' },
+    c: { source: 'images/other.png', base_domain: 'https://my.site/' },
+    d: { source: 'images/layout-pack/c/tel.svg', base_domain: 'http://getquix.net/' },
+  });
+  assert.deepEqual(rewriteImageUrls(input, R2).paths, ['images/layout-pack/c/tel.svg']);
+});

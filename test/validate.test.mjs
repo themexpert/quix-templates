@@ -125,3 +125,17 @@ test('walks a block whose data is a single node object', async () => {
   const errors = await validate(dir, opts);
   assert.ok(errors.some((e) => /free template "b" uses pro element countdown/.test(e)), errors.join('\n'));
 });
+
+test('flags doubled-slash legacy urls and getquix base_domain', async () => {
+  for (const value of [
+    { image: 'https://getquix.net//images/x.jpg' },
+    { media: { source: 'images/a.svg', base_domain: 'https://getquix.net/' } },
+  ]) {
+    const dir = built();
+    const item = readJson(dir, 'blocks/b.json');
+    Object.assign(item.data[0].children[0].children[0], value);
+    writeJson(dir, 'blocks/b.json', item);
+    const errors = await validate(dir, opts);
+    assert.ok(errors.some((e) => /legacy host.*b\.json/.test(e)), errors.join('\n'));
+  }
+});
