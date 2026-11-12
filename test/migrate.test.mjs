@@ -87,3 +87,16 @@ test('collects relative image sources only for getquix base_domain', () => {
   });
   assert.deepEqual(rewriteImageUrls(input, R2).paths, ['images/layout-pack/c/tel.svg']);
 });
+
+test('collapses repeated slashes inside the image path', () => {
+  const input = JSON.stringify({
+    a: 'https://getquix.net/images//buildx/blog-1.jpg',
+    b: 'https://getquix.net/images/primer//w-2.jpg',
+  });
+  const { json, paths } = rewriteImageUrls(input, R2);
+  assert.equal(json, JSON.stringify({ a: `${R2}/images/buildx/blog-1.jpg`, b: `${R2}/images/primer/w-2.jpg` }));
+  assert.deepEqual(paths, ['images/buildx/blog-1.jpg', 'images/primer/w-2.jpg']);
+
+  const escaped = '{"u":"https:\\/\\/getquix.net\\/images\\/\\/buildx\\/\\/blog-1.jpg"}';
+  assert.equal(rewriteImageUrls(escaped, R2).json, '{"u":"https:\\/\\/r2.test\\/images\\/buildx\\/blog-1.jpg"}');
+});
