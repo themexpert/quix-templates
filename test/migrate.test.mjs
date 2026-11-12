@@ -49,3 +49,12 @@ test('rewrites escaped urls with nested folders', () => {
   assert.equal(json, '{"u":"https:\\/\\/r2.test\\/images\\/layout-pack\\/e\\/a.jpg"}');
   assert.deepEqual(paths, ['images/layout-pack/e/a.jpg']);
 });
+
+test('collects file names with spaces and parentheses', () => {
+  const input =
+    '{"a":"https:\\/\\/getquix.net\\/images\\/buildx\\/drill (1).png","b":"https://getquix.net/images/x/Frame-1-(2).jpg","c":"url(https://getquix.net/images/y/z.png) no-repeat"}';
+  const { json, paths } = rewriteImageUrls(input, R2);
+  assert.deepEqual(paths, ['images/buildx/drill (1).png', 'images/x/Frame-1-(2).jpg', 'images/y/z.png']);
+  assert.ok(json.includes('r2.test\\/images\\/buildx\\/drill (1).png'));
+  assert.ok(json.includes('url(https://r2.test/images/y/z.png) no-repeat'));
+});

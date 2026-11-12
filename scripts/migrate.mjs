@@ -23,6 +23,13 @@ const mig = join(root, 'migration');
 const raw = join(mig, 'raw');
 
 const ensure = (file) => mkdirSync(dirname(file), { recursive: true });
+const safeDecode = (p) => {
+  try {
+    return decodeURIComponent(p);
+  } catch {
+    return p;
+  }
+};
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function request(url) {
@@ -102,7 +109,7 @@ for (const item of items) {
   const slug = slugFor(item, used);
   slugs.set(item.id, slug);
   const { json, paths } = rewriteImageUrls(payloads.get(item.id), r2Base);
-  paths.forEach((p) => imagePaths.add(decodeURIComponent(p)));
+  paths.forEach((p) => imagePaths.add(safeDecode(p)));
   const file = join(root, dirFor(item.type), `${slug}.json`);
   ensure(file);
   writeFileSync(file, json);
