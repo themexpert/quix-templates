@@ -1,0 +1,16 @@
+{
+  "itemTags": [{ "id": "1", "title": "Hero", "alias": "hero" }],
+  "layout_category": [{ "id": "5", "title": "Business", "alias": "business" }],
+  "templates": {
+    "a": {
+      "legacy_id": "101", "type": "layout", "title": "Alpha", "category_title": "Business",
+      "category_alias": "business", "catid": "5", "tags": [{ "id": "1", "title": "Hero", "alias": "hero" }],
+      "pack": "", "license": "free", "min_version": "6.0.0", "featured": "0", "previewurl": "https://example.test/a"
+    },
+    "b": {
+      "legacy_id": null, "type": "section", "title": "Beta", "category_title": "Business",
+      "category_alias": "business", "catid": "5", "tags": [],
+      "pack": "", "license": "free", "min_version": "6.0.0", "featured": "1", "previewurl": ""
+    }
+  }
+}

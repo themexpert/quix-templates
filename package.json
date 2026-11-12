@@ -1,0 +1,10 @@
+{
+  "name": "quix-templates",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs"
+  }
+}
