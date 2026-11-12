@@ -7,6 +7,15 @@ import { pathToFileURL } from 'node:url';
 import sharp from 'sharp';
 import { screenshot } from '../lib/shot.mjs';
 
+// --shot is a local authoring step; CI has no browser installed.
+let noBrowser = false;
+try {
+  const { chromium } = await import('playwright');
+  await (await chromium.launch()).close();
+} catch {
+  noBrowser = 'chromium not installed (npx playwright install chromium)';
+}
+
 // A Quix-like page: a header collection (red) above the page content (blue),
 // with an element still hidden by its entrance animation class.
 const html = `<!doctype html><html><body style="margin:0">
@@ -30,7 +39,7 @@ const meanRgb = async (file) => {
   return channels.slice(0, 3).map((c) => Math.round(c.mean));
 };
 
-test('section shot captures the page content, not header collections', { timeout: 60_000 }, async () => {
+test('section shot captures the page content, not header collections', { timeout: 60_000, skip: noBrowser }, async () => {
   const { dir, url } = page();
   const out = join(dir, 's.jpg');
   await screenshot(url, 'section', out);
@@ -41,7 +50,7 @@ test('section shot captures the page content, not header collections', { timeout
   assert.ok(b > 200 && r < 40, `blue page content, got r=${r} b=${b}`);
 });
 
-test('layout shot is a 920x1000 crop from the top of the page content', { timeout: 60_000 }, async () => {
+test('layout shot is a 920x1000 crop from the top of the page content', { timeout: 60_000, skip: noBrowser }, async () => {
   const { dir, url } = page();
   const out = join(dir, 'l.jpg');
   await screenshot(url, 'layout', out);
