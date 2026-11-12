@@ -5,9 +5,13 @@
   "scripts": {
     "test": "node --test",
     "build": "node scripts/build.mjs",
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "add": "node scripts/add.mjs"
   },
   "dependencies": {
     "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.0"
   }
 }
