@@ -115,3 +115,13 @@ test('remote check HEADs JSON-escaped R2 image urls', async () => {
     globalThis.fetch = realFetch;
   }
 });
+
+test('walks a block whose data is a single node object', async () => {
+  const dir = built();
+  const item = readJson(dir, 'blocks/b.json');
+  item.data = { ...item.data[0] };
+  item.data.children[0].children.push({ slug: 'countdown', children: [] });
+  writeJson(dir, 'blocks/b.json', item);
+  const errors = await validate(dir, opts);
+  assert.ok(errors.some((e) => /free template "b" uses pro element countdown/.test(e)), errors.join('\n'));
+});
