@@ -10,7 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     env:
-      R2_PUBLIC_BASE: ${{ vars.R2_PUBLIC_BASE }}
+      R2_PUBLIC_BASE: ${{ vars.R2_PUBLIC_BASE || 'https://quix-templates.themexpert.com' }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
