@@ -1,0 +1,400 @@
+{
+  "groups": [],
+  "title": "Content Block 1",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": "stretch-container",
+          "bg_image": "https://images.pexels.com/photos/6443/apple-flowers-iphone-desk.jpg?w=1920&h=1000&auto=compress&cs=tinysrgb",
+          "image_size": "initial",
+          "bg_color": "",
+          "image_position": "initial",
+          "padding": {
+            "top": "100px",
+            "left": "",
+            "bottom": "100px",
+            "right": ""
+          },
+          "bg_parallax": false,
+          "bg_overlay": false,
+          "image_repeat": "no-repeat"
+        },
+        "advanced": {
+          "label": "Content Block 1",
+          "id": "qx-section-271",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "bg_overlay": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-262",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-834",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>All-in-one platform</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "12px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "2.25px",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-549",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h1>persecuti ex<br />Pri ex nullam</h1>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "25px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "35px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Montserrat",
+                          "value": "Montserrat",
+                          "clearable": true
+                        },
+                        "case": {
+                          "label": "Uppercase",
+                          "value": "uppercase"
+                        },
+                        "spacing": "5px",
+                        "height": "1.3"
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-7543",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>Dicam adolescens vim et, duo cu suavitate percipitur, no mea dicat munere habemus. Nec ad animal contentiones. Ei sit fugit simul, in pro utroque gubergren referrentur.</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "18px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "1.6px",
+                        "height": "1.6"
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-1177",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "button": {
+                        "text": "Learn More",
+                        "url": "#",
+                        "target": false
+                      },
+                      "alignment": "left",
+                      "icon": "",
+                      "icon_placement": "left",
+                      "type": "regular",
+                      "style": "qx-btn-primary",
+                      "animation": 0
+                    },
+                    "styles": {
+                      "border_radius": "0",
+                      "bg_color_hover": "#333",
+                      "button_icon_color_hover": "",
+                      "bg_color": "rgba(0, 0, 0, 0)",
+                      "button_icon_color": "",
+                      "border": true,
+                      "border_hover_color": "",
+                      "text_color_hover": "#fff",
+                      "margin": {
+                        "top": "25px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_color": "#333",
+                      "padding": {
+                        "top": "12px",
+                        "left": "35px",
+                        "bottom": "12px",
+                        "right": "35px"
+                      },
+                      "text_color": "#333",
+                      "border_width": "2",
+                      "icon_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_style": "solid"
+                    },
+                    "advanced": {
+                      "label": "Button",
+                      "id": "qx-button-19112",
+                      "class": ""
+                    }
+                  },
+                  "slug": "button"
+                }
+              ],
+              "size": {
+                "lg": 0.4166666666666667,
+                "md": 0.4166666666666667,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-646",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [],
+              "size": {
+                "lg": 0.5833333333333334,
+                "md": 0.5833333333333334,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

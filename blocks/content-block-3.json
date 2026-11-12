@@ -1,0 +1,388 @@
+{
+  "groups": [],
+  "title": "Content Block 3",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": "stretch-no-container",
+          "bg_image": "",
+          "image_size": "initial",
+          "bg_color": "",
+          "image_position": "initial",
+          "padding": {
+            "top": "100px",
+            "left": "",
+            "bottom": "100px",
+            "right": ""
+          },
+          "bg_parallax": false,
+          "bg_overlay": false,
+          "image_repeat": "no-repeat"
+        },
+        "advanced": {
+          "label": "Content Block 4",
+          "id": "qx-section-86306",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "bg_overlay": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-3307",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-72336",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 1,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-14516",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "content": "<h2>Reasons Mentioned</h2>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "20px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "40px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-20339",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "content": "<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "16px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": "1.5"
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#ADADAD",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-83373",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "button": {
+                        "text": "Learn More",
+                        "url": "#",
+                        "target": false
+                      },
+                      "alignment": "center",
+                      "icon": "",
+                      "icon_placement": "left",
+                      "type": "regular",
+                      "style": "qx-btn-primary",
+                      "animation": 0
+                    },
+                    "styles": {
+                      "border_radius": 3,
+                      "bg_color_hover": "",
+                      "button_icon_color_hover": "",
+                      "bg_color": "",
+                      "button_icon_color": "",
+                      "border": false,
+                      "border_hover_color": "",
+                      "text_color_hover": "",
+                      "margin": {
+                        "top": "25px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": {
+                          "label": "Uppercase",
+                          "value": "uppercase"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "10px",
+                        "left": "20px",
+                        "bottom": "10px",
+                        "right": "20px"
+                      },
+                      "text_color": "",
+                      "border_width": 2,
+                      "icon_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_style": "solid"
+                    },
+                    "advanced": {
+                      "label": "Button",
+                      "id": "qx-button-7407",
+                      "class": ""
+                    }
+                  },
+                  "slug": "button"
+                }
+              ],
+              "size": {
+                "lg": 0.5,
+                "md": 0.5,
+                "sm": 1,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-57519",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 1,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

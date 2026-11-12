@@ -1,0 +1,314 @@
+{
+  "groups": [],
+  "title": "Header 4",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": "stretch-container",
+          "bg_image": "https://images.unsplash.com/photo-1448803171440-78112b691369",
+          "image_size": "cover",
+          "bg_color": "",
+          "image_position": "center",
+          "padding": {
+            "top": "20vh",
+            "left": "",
+            "bottom": "20vh",
+            "right": ""
+          },
+          "bg_parallax": true,
+          "bg_overlay": false,
+          "image_repeat": "no-repeat"
+        },
+        "advanced": {
+          "label": "Header 4",
+          "id": "qx-section-80505",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "bg_overlay": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-12506",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-40508",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "content": "<h1>Quix Joomla! Page Builder</h1>",
+                      "animation": "fadeInDown"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "15px",
+                        "left": "",
+                        "bottom": "25px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "60px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Droid Serif",
+                          "value": "Droid Serif",
+                          "clearable": true
+                        },
+                        "case": {
+                          "label": "Uppercase",
+                          "value": "uppercase"
+                        },
+                        "spacing": "",
+                        "height": "1.3"
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "rgba(255, 255, 255, 1)",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-43939",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "content": "<p>Quix is compatible with any template or framework and can be used to create beautiful and fluid <br />layouts inside the component area or article of any size and shape.</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "70px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "20px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Droid Serif",
+                          "value": "Droid Serif",
+                          "clearable": true
+                        },
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "rgba(255, 255, 255, 1)",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-48950",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "button": {
+                        "text": "Learn More",
+                        "url": "#",
+                        "target": false
+                      },
+                      "alignment": "center",
+                      "icon": "",
+                      "icon_placement": "left",
+                      "type": "regular",
+                      "style": "qx-btn-primary",
+                      "animation": "fadeInDown"
+                    },
+                    "styles": {
+                      "border_radius": "40",
+                      "bg_color_hover": "rgba(0, 94, 155, 1)",
+                      "button_icon_color_hover": "",
+                      "bg_color": "#0571B6",
+                      "button_icon_color": "",
+                      "border": true,
+                      "border_hover_color": "",
+                      "text_color_hover": "",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "18px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Jaldi",
+                          "value": "Jaldi",
+                          "clearable": true
+                        },
+                        "case": null,
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "10px",
+                        "left": "30px",
+                        "bottom": "10px",
+                        "right": "30px"
+                      },
+                      "text_color": "",
+                      "border_width": "0",
+                      "icon_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_style": "solid"
+                    },
+                    "advanced": {
+                      "label": "Button",
+                      "id": "qx-button-73940",
+                      "class": ""
+                    }
+                  },
+                  "slug": "button"
+                }
+              ],
+              "size": {
+                "lg": 1,
+                "md": 1,
+                "sm": 1,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

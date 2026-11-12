@@ -1,0 +1,300 @@
+{
+  "groups": [],
+  "title": "Call To Action 2",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": "stretch-container",
+          "bg_image": "",
+          "image_size": "initial",
+          "bg_color": "#fff",
+          "image_position": "initial",
+          "padding": {
+            "top": "80px",
+            "left": "",
+            "bottom": "80px",
+            "right": ""
+          },
+          "bg_parallax": false,
+          "bg_overlay": false,
+          "image_repeat": "no-repeat"
+        },
+        "advanced": {
+          "label": "Content Block 4 (Call To Action)",
+          "id": "qx-section-02496",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": true,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "bg_overlay": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-102497",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-912778",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h2><span style=\"color: #33475f;\">Let’s talk</span> about how Mixpanel can help <br />you better understand your users.</h2>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "30px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Open Sans",
+                          "value": "Open Sans",
+                          "clearable": true
+                        },
+                        "case": null,
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#697b93",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-552783",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                }
+              ],
+              "size": {
+                "lg": 0.6666666666666666,
+                "md": 0.6666666666666666,
+                "sm": 1,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-992780",
+                  "class": "qx-flex qx-flex-middle"
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "button": {
+                        "text": "Conttact us",
+                        "url": "",
+                        "target": false
+                      },
+                      "alignment": "left",
+                      "icon": "",
+                      "icon_placement": "left",
+                      "type": "regular",
+                      "style": "qx-btn-default",
+                      "animation": 0
+                    },
+                    "styles": {
+                      "border_radius": "0",
+                      "bg_color_hover": "rgba(0, 180, 255, 0.82)",
+                      "button_icon_color_hover": "",
+                      "bg_color": "#00b4ff",
+                      "button_icon_color": "",
+                      "border": true,
+                      "border_hover_color": "",
+                      "text_color_hover": "",
+                      "margin": {
+                        "top": "14px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Open Sans",
+                          "value": "Open Sans",
+                          "clearable": true
+                        },
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_color": "#00b4ff",
+                      "padding": {
+                        "top": "12px",
+                        "left": "35px",
+                        "bottom": "12px",
+                        "right": "35px"
+                      },
+                      "text_color": "rgba(255, 255, 255, 1)",
+                      "border_width": "1",
+                      "icon_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_style": "solid"
+                    },
+                    "advanced": {
+                      "label": "Button",
+                      "id": "qx-button-922817",
+                      "class": ""
+                    }
+                  },
+                  "slug": "button"
+                }
+              ],
+              "size": {
+                "lg": 0.3333333333333333,
+                "md": 0.3333333333333333,
+                "sm": 1,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

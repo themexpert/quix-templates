@@ -1,0 +1,531 @@
+{
+  "groups": [],
+  "title": "Feature 5",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": 0,
+          "bg_image": "",
+          "image_size": "initial",
+          "bg_color": "",
+          "image_position": "center right",
+          "padding": {
+            "top": "10vh",
+            "left": "",
+            "bottom": "10vh",
+            "right": ""
+          },
+          "bg_parallax": false,
+          "bg_overlay": false,
+          "image_repeat": "no-repeat"
+        },
+        "advanced": {
+          "label": "Feature 5",
+          "id": "qx-section-9375",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "center right",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-7876",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "10%",
+                    "bottom": "",
+                    "right": "10%"
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-69106",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h2>Real-time design collaboration and tours</h2>",
+                      "animation": "fadeInDown"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "32px",
+                        "bold": false,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": "48px"
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#333c4e",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-32111",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.</p>",
+                      "animation": "fadeInDown"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "20px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "16px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#6d6d6d",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-30145",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "divider": false,
+                      "color": "",
+                      "divider_style": "solid",
+                      "divider_width": 0,
+                      "divider_center": false,
+                      "height": "40"
+                    },
+                    "advanced": {
+                      "label": "Divider/Spacer",
+                      "id": "qx-divider-671194",
+                      "class": ""
+                    }
+                  },
+                  "slug": "divider"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "animation": "fadeInUp",
+                      "placement": "left",
+                      "image_alt_text": "",
+                      "animation_delay": "0.2",
+                      "title": "100+ Themes",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.</p>",
+                      "icon": "",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "http://d3dpullhe7ql8w.cloudfront.net/demo-assets/icons-purple/layers.png",
+                      "icon_enabled": false
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "0px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "16px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "1px",
+                        "height": ""
+                      },
+                      "border_radius": 3,
+                      "image_size": "initial",
+                      "bg_hover_color": "",
+                      "body_color": "#6d6d6d",
+                      "media_margin": {
+                        "top": "10px",
+                        "left": "",
+                        "bottom": "",
+                        "right": "30px"
+                      },
+                      "bg_color": "",
+                      "icon_font_size": 80,
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_hover_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "#414141",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Blurb",
+                      "id": "qx-blurb-24955",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "animation": "fadeInUp",
+                      "placement": "left",
+                      "image_alt_text": "",
+                      "animation_delay": "0.3",
+                      "title": "Undo/Redo Management",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.</p>",
+                      "icon": "",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "http://d3dpullhe7ql8w.cloudfront.net/demo-assets/icons-purple/interface-1.png",
+                      "icon_enabled": false
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "0px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "16px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "1px",
+                        "height": ""
+                      },
+                      "border_radius": 3,
+                      "image_size": "initial",
+                      "bg_hover_color": "",
+                      "body_color": "#6d6d6d",
+                      "media_margin": {
+                        "top": "10px",
+                        "left": "",
+                        "bottom": "",
+                        "right": "30px"
+                      },
+                      "bg_color": "",
+                      "icon_font_size": 80,
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_hover_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "#414141",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Blurb",
+                      "id": "qx-blurb-691711",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.5833333333333334,
+                "md": 0.5,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": "0px"
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-19108",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "image": "https://s3.amazonaws.com/tx-quix/demo-assets/quix-speed.png",
+                      "alt_text": "",
+                      "title_text": "",
+                      "responsive": false,
+                      "alignment": "center",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image_width": "",
+                      "image_height": ""
+                    },
+                    "styles": {
+                      "animation": "fadeInRight",
+                      "border_radius": 3,
+                      "open_lightbox": false,
+                      "border": false,
+                      "border_hover_color": "",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "border_width": 2,
+                      "border_style": "solid"
+                    },
+                    "advanced": {
+                      "label": "Image",
+                      "id": "qx-image-23459",
+                      "class": ""
+                    }
+                  },
+                  "slug": "image"
+                }
+              ],
+              "size": {
+                "lg": 0.4166666666666667,
+                "md": 0.5,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

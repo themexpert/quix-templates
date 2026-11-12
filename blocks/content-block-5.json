@@ -1,0 +1,638 @@
+{
+  "groups": [],
+  "title": "Content Block 5",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "bg_color_skew": "",
+          "off_screen_bg_obj_size": "",
+          "container": false,
+          "off_screen_bg_class": 0,
+          "bg_image": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103",
+          "off_screen_bg_obj_position_x": "",
+          "bg_height": "100%",
+          "off_screen_bg_obj_position_y": "",
+          "section_position": 0,
+          "bg_skew": false,
+          "image_size": "cover",
+          "enable_video_bg": false,
+          "bg_bottom": "",
+          "off_screen_bg": false,
+          "video_bg": "",
+          "bg_color": "rgba(255, 255, 255, .5)",
+          "parallax_styles": "",
+          "background_image": "",
+          "video_ogg": "",
+          "video_mp4": "",
+          "image_position": "center",
+          "margin": {
+            "top": "",
+            "left": "",
+            "bottom": "",
+            "right": "",
+            "responsive": true,
+            "responsive_preview": false,
+            "tablet": {
+              "top": "",
+              "left": "",
+              "bottom": "",
+              "right": ""
+            },
+            "phone": {
+              "top": "",
+              "left": "",
+              "bottom": "",
+              "right": ""
+            }
+          },
+          "element_style": "",
+          "parallax_x": 0,
+          "padding": {
+            "top": "150px",
+            "left": "",
+            "bottom": "150px",
+            "right": "",
+            "responsive": true,
+            "responsive_preview": false,
+            "tablet": {
+              "top": "",
+              "left": "",
+              "bottom": "",
+              "right": ""
+            },
+            "phone": {
+              "top": "",
+              "left": "",
+              "bottom": "",
+              "right": ""
+            }
+          },
+          "bg_parallax": false,
+          "video_poster": "",
+          "parallax_y": -250,
+          "bg_zindex": -1,
+          "bg_overlay": true,
+          "zindex": "",
+          "bg_skew_angle": -12,
+          "parallax_breakpoint": 0,
+          "bg_top": "",
+          "video_webm": "",
+          "stretch_mode": false,
+          "image_repeat": "no-repeat"
+        },
+        "styles": {
+          "box_shadow_vertical": 0,
+          "top_shape_type": "mountains",
+          "enable_bottom_shape": false,
+          "bottom_shape_bring_front": false,
+          "bottom_shape_type": "mountains",
+          "bottom_shape": "",
+          "box_shadow_divider": "",
+          "top_shape_height": 100,
+          "box_shadow_horizontal": 0,
+          "bottom_shape_color": "",
+          "box_shadow_inset": false,
+          "box_shadow_blur": 0,
+          "top_shape_bring_front": false,
+          "box_shadow": false,
+          "bottom_shape_width": 100,
+          "top_shape_flip": false,
+          "top_shape": "",
+          "box_shadow_color": "",
+          "bottom_shape_height": 100,
+          "enable_top_shape": false,
+          "top_shape_color": "",
+          "box_shadow_spread": 0,
+          "top_shape_width": 100,
+          "bottom_shape_flip": false
+        },
+        "animation": {
+          "hover_shadow_horizontal": 0,
+          "hover_animation": 0,
+          "hover_shadow": "",
+          "hover_shadow_blur": 0,
+          "animation": 0,
+          "hover_shadow_color": "",
+          "animation_delay": 0.1,
+          "hover_scale_enabled": false,
+          "hover_shadow_scale": 1,
+          "hover_shadow_spread": 0,
+          "hover_shadow_vertical": 0,
+          "entrance": "",
+          "hover": ""
+        },
+        "advanced": {
+          "identifier": "",
+          "label": "Content Block 5",
+          "id": "qx-section-1912",
+          "class": ""
+        },
+        "parallax": {
+          "obj_parallax": false,
+          "obj_details": [
+            {
+              "object_upload": "",
+              "obj_top": "",
+              "obj_height": "",
+              "obj_left": "",
+              "obj_bottom": "",
+              "obj_right": "",
+              "title": "Object 1",
+              "obj_depth": 0.2,
+              "obj_animation": "",
+              "obj_width": ""
+            }
+          ]
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "bg_overlay": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-1713",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-7514",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 1,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-9515",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "content": "<p><strong>Great App</strong></p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": {
+                          "label": "Uppercase",
+                          "value": "uppercase"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#979797",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-3316",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "content": "<h2>Dalton is atomic theory could why water absorbs different</h2>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "-15px",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "40px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": {
+                          "label": "Ubuntu",
+                          "value": "Ubuntu",
+                          "clearable": true
+                        },
+                        "case": "",
+                        "spacing": "",
+                        "height": "1.5"
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-3817",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "buttons": [
+                        {
+                          "btn_border_style": "",
+                          "padding_style": "",
+                          "custom_style": true,
+                          "button_style": "",
+                          "bg_color_hover": "",
+                          "button_icon_color_hover": "",
+                          "bg_color": "#4DA2FF",
+                          "button_icon_color": "",
+                          "icon_style": "",
+                          "border": false,
+                          "border_hover_color": "",
+                          "text_color_hover": "",
+                          "border_color": "",
+                          "padding": {
+                            "top": "10px",
+                            "left": "40px",
+                            "bottom": "10px",
+                            "right": "40px",
+                            "responsive": true,
+                            "responsive_preview": true,
+                            "tablet": {
+                              "top": "",
+                              "left": "",
+                              "bottom": "",
+                              "right": ""
+                            },
+                            "phone": {
+                              "top": "",
+                              "left": "",
+                              "bottom": "",
+                              "right": ""
+                            }
+                          },
+                          "style": "qx-btn-default",
+                          "text_color": "rgba(255, 255, 255, 1)",
+                          "button": {
+                            "text": "Buy Now",
+                            "url": "#",
+                            "target": false
+                          },
+                          "border_width": 2,
+                          "icon": "",
+                          "border_style": "solid",
+                          "icon_placement": "left"
+                        },
+                        {
+                          "btn_border_style": "",
+                          "padding_style": "",
+                          "custom_style": true,
+                          "button_style": "",
+                          "bg_color_hover": "",
+                          "button_icon_color_hover": "",
+                          "bg_color": "#A6E510",
+                          "button_icon_color": "",
+                          "icon_style": "",
+                          "border": false,
+                          "border_hover_color": "",
+                          "text_color_hover": "",
+                          "border_color": "",
+                          "padding": {
+                            "top": "10px",
+                            "left": "40px",
+                            "bottom": "10px",
+                            "right": "40px",
+                            "responsive": true,
+                            "responsive_preview": true,
+                            "tablet": {
+                              "top": "",
+                              "left": "",
+                              "bottom": "",
+                              "right": ""
+                            },
+                            "phone": {
+                              "top": "",
+                              "left": "",
+                              "bottom": "",
+                              "right": ""
+                            }
+                          },
+                          "style": "qx-btn-default",
+                          "text_color": "rgba(255, 255, 255, 1)",
+                          "button": {
+                            "text": "Try Free",
+                            "url": "#",
+                            "target": false
+                          },
+                          "border_width": 2,
+                          "icon": "",
+                          "border_style": "solid",
+                          "icon_placement": "left"
+                        }
+                      ]
+                    },
+                    "styles": {
+                      "box_shadow_vertical": 0,
+                      "alignment": "{\"responsive_preview\":true,\"responsive\":true,\"desktop\":\"center\",\"tablet\":\"center\",\"phone\":\"center\",\"image\":true}",
+                      "border_radius": 0,
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": "",
+                        "responsive": true,
+                        "responsive_preview": false,
+                        "tablet": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        },
+                        "phone": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        }
+                      },
+                      "font": {
+                        "size": "{\"responsive\":true,\"desktop\":0,\"responsive_preview\":false,\"tablet\":0,\"phone\":0}",
+                        "spacing": "{\"responsive\":true,\"desktop\":0,\"responsive_preview\":false,\"tablet\":0,\"phone\":0}",
+                        "family": "",
+                        "bold": "",
+                        "height": "{\"responsive\":true,\"desktop\":0,\"responsive_preview\":false,\"tablet\":0,\"phone\":0}",
+                        "underline": "",
+                        "italic": "",
+                        "case": {
+                          "label": "Uppercase",
+                          "value": "uppercase"
+                        },
+                        "weight": ""
+                      },
+                      "box_shadow_horizontal": 0,
+                      "box_shadow_inset": false,
+                      "box_shadow_blur": 0,
+                      "icon_maegin_style": "",
+                      "icon_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": "",
+                        "responsive": true,
+                        "responsive_preview": false,
+                        "tablet": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        },
+                        "phone": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        }
+                      },
+                      "box_shadow": false,
+                      "button_spacing": 10,
+                      "box_shadow_color": "",
+                      "border_boxshadow": "",
+                      "element": "",
+                      "box_shadow_spread": 0
+                    },
+                    "animation": {
+                      "hover_shadow_horizontal": 0,
+                      "hover_animation": 0,
+                      "hover_shadow": "",
+                      "hover_shadow_blur": 0,
+                      "animation": 0,
+                      "hover_shadow_color": "",
+                      "animation_delay": 0.1,
+                      "hover_scale_enabled": false,
+                      "hover_shadow_scale": 1,
+                      "hover_shadow_spread": 0,
+                      "hover_shadow_vertical": 0,
+                      "entrance": "",
+                      "hover": ""
+                    },
+                    "advanced": {
+                      "identifier": "",
+                      "label": "Button Group",
+                      "id": "qx-button-group-3410",
+                      "class": ""
+                    }
+                  },
+                  "slug": "button-group"
+                }
+              ],
+              "size": {
+                "lg": 0.5,
+                "md": 0.5,
+                "sm": 1,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-5519",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 1,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

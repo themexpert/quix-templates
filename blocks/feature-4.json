@@ -1,0 +1,939 @@
+{
+  "groups": [],
+  "title": "Feature 4",
+  "type": "section",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": 1,
+          "bg_image": "",
+          "image_size": "initial",
+          "bg_color": "",
+          "image_position": "initial",
+          "padding": {
+            "top": "20vh",
+            "left": "",
+            "bottom": "20vh",
+            "right": ""
+          },
+          "bg_parallax": false,
+          "bg_overlay": false,
+          "image_repeat": "no-repeat"
+        },
+        "advanced": {
+          "label": "Feature 4",
+          "id": "qx-section-7618",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "margin": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "padding": {
+                "top": "",
+                "left": "",
+                "bottom": "",
+                "right": ""
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-2319",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-7620",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": false,
+                    "xs": false
+                  },
+                  "form": {
+                    "general": {
+                      "divider": false,
+                      "color": "",
+                      "divider_style": "solid",
+                      "divider_width": 0,
+                      "divider_center": false,
+                      "height": "60"
+                    },
+                    "advanced": {
+                      "label": "Divider/Spacer",
+                      "id": "qx-divider-721",
+                      "class": ""
+                    }
+                  },
+                  "slug": "divider"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>Our Quality &amp; Experience</p>",
+                      "animation": "fadeInLeft"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "rgb(102, 103, 116)",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-6022",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h2>Good design is obvious. Great design is transparent.</h2>",
+                      "animation": "fadeInLeft"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "-10px",
+                        "left": "",
+                        "bottom": "",
+                        "right": "40px"
+                      },
+                      "font": {
+                        "size": "40px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Bree Serif",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-2623",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": false,
+                    "xs": false
+                  },
+                  "form": {
+                    "general": {
+                      "divider_width": 0,
+                      "color": "",
+                      "width": 0,
+                      "height": "{\"responsive\":true,\"desktop\":\"50\",\"responsive_preview\":true,\"tablet\":0,\"phone\":0}",
+                      "enable_width": false,
+                      "divider_style": "solid",
+                      "border": false,
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": "",
+                        "responsive": true,
+                        "responsive_preview": false,
+                        "tablet": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        },
+                        "phone": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        }
+                      },
+                      "divider": false,
+                      "divider_center": false
+                    },
+                    "animation": {
+                      "hover_shadow_horizontal": 0,
+                      "hover_animation": 0,
+                      "hover_shadow": "",
+                      "hover_shadow_blur": 0,
+                      "animation": 0,
+                      "hover_shadow_color": "",
+                      "animation_delay": 0.1,
+                      "hover_scale_enabled": false,
+                      "hover_shadow_scale": 1,
+                      "hover_shadow_spread": 0,
+                      "hover_shadow_vertical": 0,
+                      "entrance": "",
+                      "hover": ""
+                    },
+                    "advanced": {
+                      "identifier": "",
+                      "label": "Divider/Spacer",
+                      "id": "qx-divider-8024",
+                      "class": ""
+                    }
+                  },
+                  "slug": "divider"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "button": {
+                        "text": "Browse All Services",
+                        "url": "#",
+                        "target": false
+                      },
+                      "alignment": "{\"responsive_preview\":false,\"responsive\":true,\"desktop\":\"left\",\"tablet\":\"left\",\"phone\":\"left\",\"image\":true}",
+                      "icon": "",
+                      "icon_placement": "left",
+                      "type": "regular",
+                      "style": "qx-btn-default"
+                    },
+                    "styles": {
+                      "box_shadow_vertical": 0,
+                      "border_radius": "30",
+                      "bg_color_hover": "#933EC5",
+                      "button_icon_color_hover": "",
+                      "bg_color": "#933EC5",
+                      "button_icon_color": "",
+                      "icon_style": "",
+                      "border": true,
+                      "border_hover_color": "rgba(0, 0, 0, 0)",
+                      "text_color_hover": "rgba(255, 255, 255, 1)",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": "",
+                        "responsive": true,
+                        "responsive_preview": false,
+                        "tablet": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        },
+                        "phone": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        }
+                      },
+                      "font": {
+                        "size": "{\"responsive\":true,\"desktop\":\"14\",\"responsive_preview\":true,\"tablet\":0,\"phone\":0}",
+                        "spacing": "{\"responsive\":true,\"desktop\":0,\"responsive_preview\":false,\"tablet\":0,\"phone\":0}",
+                        "family": "",
+                        "bold": "",
+                        "height": "{\"responsive\":true,\"desktop\":0,\"responsive_preview\":false,\"tablet\":0,\"phone\":0}",
+                        "underline": "",
+                        "italic": "",
+                        "case": {
+                          "label": "Uppercase",
+                          "value": "uppercase"
+                        },
+                        "weight": ""
+                      },
+                      "box_shadow_horizontal": 0,
+                      "border_color": "rgba(0, 0, 0, 0)",
+                      "padding": {
+                        "top": "10px",
+                        "left": "30px",
+                        "bottom": "10px",
+                        "right": "30px",
+                        "responsive": true,
+                        "responsive_preview": true,
+                        "tablet": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        },
+                        "phone": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        }
+                      },
+                      "text_color": "rgba(255, 255, 255, 1)",
+                      "box_shadow_inset": false,
+                      "box_shadow_blur": 0,
+                      "border_width": "0",
+                      "icon_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": "",
+                        "responsive": true,
+                        "responsive_preview": false,
+                        "tablet": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        },
+                        "phone": {
+                          "top": "",
+                          "left": "",
+                          "bottom": "",
+                          "right": ""
+                        }
+                      },
+                      "box_shadow": false,
+                      "box_shadow_color": "",
+                      "border_boxshadow": "",
+                      "element": "",
+                      "color_styles": "",
+                      "box_shadow_spread": 0,
+                      "border_style": "solid"
+                    },
+                    "animation": {
+                      "hover_shadow_horizontal": 0,
+                      "hover_animation": 0,
+                      "hover_shadow": "",
+                      "hover_shadow_blur": 0,
+                      "animation": "fadeInUp",
+                      "hover_shadow_color": "",
+                      "animation_delay": 0.1,
+                      "hover_scale_enabled": false,
+                      "hover_shadow_scale": 1,
+                      "hover_shadow_spread": 0,
+                      "hover_shadow_vertical": 0,
+                      "entrance": "",
+                      "hover": ""
+                    },
+                    "advanced": {
+                      "identifier": "",
+                      "label": "Button",
+                      "id": "qx-button-8216",
+                      "class": ""
+                    }
+                  },
+                  "slug": "button"
+                }
+              ],
+              "size": {
+                "lg": 0.5,
+                "md": 0.5,
+                "sm": 1,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-3526",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "animation": "fadeInDown",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "animation_delay": 0.1,
+                      "title": "100+ Themes",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum.</p>",
+                      "icon": "",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "http://d3dpullhe7ql8w.cloudfront.net/demo-assets/icons-purple/layers.png",
+                      "icon_enabled": false
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_radius": 3,
+                      "image_size": "initial",
+                      "bg_hover_color": "",
+                      "body_color": "rgb(102, 103, 116)",
+                      "media_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_color": "",
+                      "icon_font_size": 80,
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_hover_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "rgb(71, 75, 83)",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Themes",
+                      "id": "qx-blurb-4427",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "animation": "fadeInDown",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "animation_delay": "0.3",
+                      "title": "Mobile Friendly",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum.</p>",
+                      "icon": "",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "http://d3dpullhe7ql8w.cloudfront.net/demo-assets/icons-purple/technology.png",
+                      "icon_enabled": false
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_radius": 3,
+                      "image_size": "initial",
+                      "bg_hover_color": "",
+                      "body_color": "rgb(102, 103, 116)",
+                      "media_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_color": "",
+                      "icon_font_size": 80,
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_hover_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "rgb(71, 75, 83)",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Mobile",
+                      "id": "qx-blurb-4628",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "center_text": false,
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "margin": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  },
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-7329",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "animation": "fadeInDown",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "animation_delay": "0.2",
+                      "title": "Fast Loading",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum.</p>",
+                      "icon": "",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "http://d3dpullhe7ql8w.cloudfront.net/demo-assets/icons-purple/stopwatch.png",
+                      "icon_enabled": false
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_radius": 3,
+                      "image_size": "initial",
+                      "bg_hover_color": "",
+                      "body_color": "rgb(102, 103, 116)",
+                      "media_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_color": "",
+                      "icon_font_size": 80,
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_hover_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "rgb(71, 75, 83)",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "fast loading",
+                      "id": "qx-blurb-2430",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "animation": "fadeInDown",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "animation_delay": "0.4",
+                      "title": "Extensive Documentation",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum.</p>",
+                      "icon": "",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "http://d3dpullhe7ql8w.cloudfront.net/demo-assets/icons-purple/agenda.png",
+                      "icon_enabled": false
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": true,
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": {
+                          "label": "Capitalize",
+                          "value": "capitalize"
+                        },
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_radius": 3,
+                      "image_size": "initial",
+                      "bg_hover_color": "",
+                      "body_color": "rgb(102, 103, 116)",
+                      "media_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_color": "",
+                      "icon_font_size": 80,
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "Open Sans",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_hover_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "rgb(71, 75, 83)",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Documentation",
+                      "id": "qx-blurb-2131",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
