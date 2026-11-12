@@ -1,5 +1,5 @@
 import { test } from 'node:test';
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { validate } from '../lib/validate.mjs';
@@ -111,6 +111,57 @@ test('remote check HEADs JSON-escaped R2 image urls', async () => {
     const errors = await validate(dir, { r2Base: R2, checkRemote: true });
     assert.ok(seen.includes('https://r2.test/images/x.jpg'), seen.join('\n'));
     assert.ok(errors.some((e) => /missing on R2: https:\/\/r2\.test\/images\/x\.jpg/.test(e)), errors.join('\n'));
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+});
+
+test('remote check HEADs whole R2 image urls that contain spaces', async () => {
+  const dir = built();
+  const p = join(dir, 'blocks/b.json');
+  writeFileSync(
+    p,
+    readFileSync(p, 'utf8').replace(
+      '"title"',
+      '"u":"https:\\/\\/r2.test\\/images\\/health & medical\\/team-1.jpg","css":"url(https://r2.test/images/bg.png) no-repeat","title"',
+    ),
+  );
+  const realFetch = globalThis.fetch;
+  const seen = [];
+  globalThis.fetch = async (url) => {
+    seen.push(url);
+    return { ok: true };
+  };
+  try {
+    await validate(dir, { r2Base: R2, checkRemote: true });
+    assert.ok(seen.includes('https://r2.test/images/health & medical/team-1.jpg'), seen.join('\n'));
+    assert.ok(seen.includes('https://r2.test/images/bg.png'), seen.join('\n'));
+    assert.ok(!seen.some((u) => u.endsWith('/images/health')), seen.join('\n'));
+  } finally {
+    globalThis.fetch = realFetch;
+  }
+});
+
+test('remote check skips images and thumbs committed in the repo', async () => {
+  const dir = built();
+  const p = join(dir, 'blocks/b.json');
+  writeFileSync(p, readFileSync(p, 'utf8').replace('"title"', '"u":"https:\\/\\/r2.test\\/images\\/new\\/x.jpg","title"'));
+  mkdirSync(join(dir, 'images/new'), { recursive: true });
+  writeFileSync(join(dir, 'images/new/x.jpg'), 'jpg');
+  mkdirSync(join(dir, 'thumbs'), { recursive: true });
+  writeFileSync(join(dir, 'thumbs/b.jpg'), 'jpg');
+  const realFetch = globalThis.fetch;
+  const seen = [];
+  globalThis.fetch = async (url) => {
+    seen.push(url);
+    return { ok: false };
+  };
+  try {
+    const errors = await validate(dir, { r2Base: R2, checkRemote: true });
+    assert.ok(!seen.includes('https://r2.test/images/new/x.jpg'), seen.join('\n'));
+    assert.ok(!seen.includes('https://r2.test/thumbs/b.jpg'), seen.join('\n'));
+    assert.ok(seen.includes('https://r2.test/thumbs/a.jpg'), seen.join('\n'));
+    assert.ok(!errors.some((e) => /new\/x\.jpg|thumbs\/b\.jpg/.test(e)), errors.join('\n'));
   } finally {
     globalThis.fetch = realFetch;
   }
