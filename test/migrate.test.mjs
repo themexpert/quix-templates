@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { slugFor, rewriteImageUrls, isStub } from '../lib/migrate.mjs';
+import { slugFor, rewriteImageUrls, isStub, dropDevMedia } from '../lib/migrate.mjs';
 
 const R2 = 'https://r2.test';
 
@@ -99,4 +99,25 @@ test('collapses repeated slashes inside the image path', () => {
 
   const escaped = '{"u":"https:\\/\\/getquix.net\\/images\\/\\/buildx\\/\\/blog-1.jpg"}';
   assert.equal(rewriteImageUrls(escaped, R2).json, '{"u":"https:\\/\\/r2.test\\/images\\/buildx\\/blog-1.jpg"}');
+});
+
+test('drops media that point at a local dev site', () => {
+  const input =
+    '{"a":{"type":"image","base_domain":"http:\\/\\/layout-bundle.test\\/","source":"images\\/layout.png"},' +
+    '"b":{"base_domain":"http:\\/\\/try_quix4_j4.test\\/","source":""},' +
+    '"c":{"base_domain":"http://localhost:8080/","source":"images/x.jpg"},' +
+    '"d":{"base_domain":"https:\\/\\/r2.test\\/","source":"images\\/ok.jpg"},' +
+    '"e":{"base_domain":"","source":"images\\/rel.jpg"},' +
+    '"f":{"source":"qxif-play-circle","base_domain":"http:\\/\\/try_quix4_j4.test\\/","type":"svg"},' +
+    '"g":{"base_domain":"http:\\/\\/try_quix4_j4.test\\/","source":"qxif-star","type":"svg"}}';
+  const { json, dropped } = dropDevMedia(input, R2);
+  const out = JSON.parse(json);
+  assert.deepEqual(out.a, { type: 'image', base_domain: '', source: '' });
+  assert.deepEqual(out.b, { base_domain: '', source: '' });
+  assert.deepEqual(out.c, { base_domain: '', source: '' });
+  assert.deepEqual(out.d, { base_domain: 'https://r2.test/', source: 'images/ok.jpg' });
+  assert.deepEqual(out.e, { base_domain: '', source: 'images/rel.jpg' });
+  assert.deepEqual(out.f, { source: 'qxif-play-circle', base_domain: '', type: 'svg' });
+  assert.deepEqual(out.g, { base_domain: '', source: 'qxif-star', type: 'svg' });
+  assert.deepEqual(dropped, ['http://layout-bundle.test/images/layout.png', 'http://localhost:8080/images/x.jpg']);
 });

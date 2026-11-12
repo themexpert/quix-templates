@@ -6,7 +6,7 @@ import { dirname, join } from 'node:path';
 import sharp from 'sharp';
 import { dirFor, writeIndex } from '../lib/index.mjs';
 import { validate } from '../lib/validate.mjs';
-import { isStub, rewriteImageUrls, sha1, slugFor } from '../lib/migrate.mjs';
+import { dropDevMedia, isStub, rewriteImageUrls, sha1, slugFor } from '../lib/migrate.mjs';
 
 const r2Base = (process.env.R2_PUBLIC_BASE || '').replace(/\/$/, '');
 if (!r2Base) {
@@ -104,12 +104,15 @@ writeFileSync(join(root, 'allowlist.json'), '[]');
 const used = new Set();
 const imagePaths = new Set(['images/sample.png']); // hard-coded by the builder
 const templates = {};
+const devMedia = {}; // slug -> media dropped because they pointed at a dev site
 const slugs = new Map();
 for (const item of items) {
   const slug = slugFor(item, used);
   slugs.set(item.id, slug);
-  const { json, paths } = rewriteImageUrls(payloads.get(item.id), r2Base);
-  paths.forEach((p) => imagePaths.add(safeDecode(p)));
+  const rewritten = rewriteImageUrls(payloads.get(item.id), r2Base);
+  rewritten.paths.forEach((p) => imagePaths.add(safeDecode(p)));
+  const { json, dropped } = dropDevMedia(rewritten.json, r2Base);
+  if (dropped.length) devMedia[slug] = dropped;
   const file = join(root, dirFor(item.type), `${slug}.json`);
   ensure(file);
   writeFileSync(file, json);
@@ -120,6 +123,7 @@ for (const item of items) {
     category_title: item.category_title,
     category_alias: item.category_alias,
     catid: item.catid,
+    parent_category: item.parent_category,
     tags: item.tags,
     pack: '',
     license: item.license,
@@ -192,6 +196,7 @@ const report = {
   missingImages: missingImages.sort((a, b) => a.path.localeCompare(b.path)),
   missingThumbs: missingThumbs.sort((a, b) => a.slug.localeCompare(b.slug)),
   allowlisted,
+  devMedia,
 };
 writeFileSync(join(mig, 'report.json'), JSON.stringify(report, null, 2));
 console.log(

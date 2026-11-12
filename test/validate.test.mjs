@@ -156,6 +156,14 @@ test('remote check HEADs whole R2 image urls that contain spaces', async () => {
   }
 });
 
+test('flags a base_domain on a local dev site', async () => {
+  const dir = built();
+  const p = join(dir, 'blocks/b.json');
+  writeFileSync(p, readFileSync(p, 'utf8').replace('"title"', '"m":{"base_domain":"http:\\/\\/layout-bundle.test\\/","source":""},"title"'));
+  const errors = await validate(dir, { r2Base: R2 });
+  assert.ok(errors.some((e) => /dev site base_domain layout-bundle\.test in blocks\/b\.json/.test(e)), errors.join('\n'));
+});
+
 test('remote check skips images and thumbs committed in the repo', async () => {
   const dir = built();
   const p = join(dir, 'blocks/b.json');
