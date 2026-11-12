@@ -1,0 +1,48 @@
+name: sync to r2
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-r2
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      R2_PUBLIC_BASE: ${{ vars.R2_PUBLIC_BASE }}
+      R2_ACCOUNT_ID: ${{ vars.R2_ACCOUNT_ID }}
+      R2_BUCKET: ${{ vars.R2_BUCKET }}
+      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: auto
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run validate
+      # images/ and thumbs/ committed in the repo
+      - run: scripts/upload-media.sh
+      # mirror only what Quix fetches: the index and the template files
+      - name: sync templates
+        run: >
+          aws s3 sync . "s3://${R2_BUCKET}/templates"
+          --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com"
+          --exclude "*"
+          --include "index.json" --include "index-hash.json"
+          --include "layouts/*.json" --include "blocks/*.json"
+          --delete --cache-control "public, max-age=300" --only-show-errors
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+      - run: npm run validate -- --remote
